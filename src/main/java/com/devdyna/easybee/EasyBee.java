@@ -3,6 +3,8 @@ package com.devdyna.easybee;
 import org.slf4j.Logger;
 
 import com.devdyna.easybee.events.ScoopInteraction;
+import com.devdyna.easybee.events.Trades.Beekeeper;
+import com.devdyna.easybee.events.Trades.WanderingTrader;
 import com.devdyna.easybee.registries.CreativeTab;
 import com.devdyna.easybee.registries.item.BasicItem;
 import com.devdyna.easybee.registries.villager.POI;
@@ -27,6 +29,8 @@ public class EasyBee {
                 CreativeTab.CREATIVE_MODE_TABS.register(modEventBus);
                 NeoForge.EVENT_BUS.register(this);
                 NeoForge.EVENT_BUS.register(new ScoopInteraction());
+                NeoForge.EVENT_BUS.register(new WanderingTrader());
+                NeoForge.EVENT_BUS.register(new Beekeeper());
                 // TODO
                 // NeoForge.EVENT_BUS.register(new BeeSpawn());
                 // NeoForge.EVENT_BUS.register(new FlorealEvent());
