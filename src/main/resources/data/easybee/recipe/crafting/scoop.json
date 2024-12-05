@@ -3,14 +3,14 @@
   "pattern": [
     " ss",
     " tw",
-    "t"
+    "t  "
   ],
   "key": {
     "t": {
       "item": "minecraft:stick"
     },
     "s": {
-      "item": "minecraft:string"
+      "tag": "c:strings"
     },
     "w": {
       "tag": "minecraft:wool"
