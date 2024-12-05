@@ -20,13 +20,16 @@ public class ScoopInteraction {
 
     @SubscribeEvent
     public void playerClickEvent(PlayerInteractEvent.EntityInteractSpecific event) {
-        if (event.getTarget().getType() == EntityType.BEE && event.getItemStack().is(BasicItem.SCOOP)) {
+        ItemStack item = event.getItemStack();
+
+        if (event.getTarget().getType() == EntityType.BEE && item.is(BasicItem.SCOOP)) {
             ItemEntity itementity = new ItemEntity(event.getLevel(), event.getTarget().getX(), event.getTarget().getY(),
                     event.getTarget().getZ(),
                     new ItemStack(BasicItem.BEE.asItem()));
             itementity.setDefaultPickUpDelay();
             event.getEntity().swing(InteractionHand.MAIN_HAND);
             event.getLevel().addFreshEntity(itementity);
+            item.setDamageValue(1);
             event.getLevel().addParticle(ParticleTypes.ITEM_COBWEB, true, event.getTarget().getX(),
                     event.getTarget().getY(),
                     event.getTarget().getZ(), 0, 0, 0);
