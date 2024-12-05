@@ -1,12 +1,11 @@
 package com.devdyna.easybee.registries.item;
 
-import net.minecraft.world.item.Item;
+public class ScoopItem extends SimpleTipItem {
 
-public class ScoopItem extends Item {
-
-    public ScoopItem(Properties prop) {
-        super(prop);
+    public ScoopItem(String traslationName, Properties prop) {
+        super(traslationName, prop);
         prop.durability(128);
+        prop.stacksTo(1);
     }
 
 }

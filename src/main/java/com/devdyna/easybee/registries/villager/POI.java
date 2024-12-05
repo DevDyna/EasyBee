@@ -11,9 +11,13 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class POI {
         public static final DeferredRegister<PoiType> POINTS_OF_INTEREST = DeferredRegister
-            .create(BuiltInRegistries.POINT_OF_INTEREST_TYPE, EasyBee.MODID);
+                        .create(BuiltInRegistries.POINT_OF_INTEREST_TYPE, EasyBee.MODID);
 
-    public static final DeferredHolder<PoiType, PoiType> BEEKEEPER_POI = POINTS_OF_INTEREST.register("beekeeper_poi",
-            () -> new PoiType(ImmutableSet.copyOf(Blocks.HONEY_BLOCK.getStateDefinition().getPossibleStates()), 1,
-                    1));
+        public static final DeferredHolder<PoiType, PoiType> BEEKEEPER_POI = POINTS_OF_INTEREST.register(
+                        "beekeeper_poi",
+                        () -> new PoiType(
+                                        ImmutableSet.copyOf(
+                                                        Blocks.HONEY_BLOCK.getStateDefinition().getPossibleStates()),
+                                        1,
+                                        1));
 }

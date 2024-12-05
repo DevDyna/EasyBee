@@ -18,5 +18,4 @@ public class Profession {
             () -> new VillagerProfession("beekeeper", (b) -> b.value() == POI.BEEKEEPER_POI.get(),
                     (b) -> b.value() == POI.BEEKEEPER_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.BEEHIVE_WORK));
-
 }

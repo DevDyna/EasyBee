@@ -23,16 +23,21 @@ public class CreativeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister
             .create(Registries.CREATIVE_MODE_TAB, EasyBee.MODID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREATIVE_TAB = CREATIVE_MODE_TABS
             .register("easybee", () -> CreativeModeTab.builder()
                     .title(Component.translatable("tab.easybee")) // The language key for the title of your
                                                                   // CreativeModeTab
                     .withTabsBefore(CreativeModeTabs.COMBAT)
                     .icon(() -> BasicItem.BEEWAX.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
-                        output.accept(BasicItem.BEEWAX.get());
-                        output.accept(BasicItem.SCOOP.get());
-                        output.accept(BasicItem.BEE.get());
+                        output.accept(BasicItem.BEEWAX);
+                        output.accept(BasicItem.SCOOP);
+                        output.accept(BasicItem.BEE);
+                        output.accept(BasicItem.FLOREAL_FERTILIZER);
+                        //output.accept(BasicItem.MINERAL_FERTILIZER);
+                        output.accept(BasicItem.RAW_COPPER_NUGGET);
+                        output.accept(BasicItem.COPPER_NUGGET);
+                        output.accept(BasicItem.PATINA);
 
                     }).build());
 }

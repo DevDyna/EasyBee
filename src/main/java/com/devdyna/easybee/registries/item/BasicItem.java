@@ -23,21 +23,25 @@ public class BasicItem {
 
         public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EasyBee.MODID);
 
-        public static final DeferredItem<Item> BEEWAX = ITEMS.registerSimpleItem("beewax",
+        public static final DeferredItem<Item> BEEWAX = ITEMS.register("beewax", () -> new SimpleTipItem("beewax",
                         new Item.Properties().food(new FoodProperties.Builder()
                                         .alwaysEdible().nutrition(1).saturationModifier(2f)
                                         .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 10), 50)
-                                        .build()));
+                                        .build())));
 
+                                        //to replace DeferredSpawnEggItem to CustomItemSpawnEntity *TODO*
         public static final DeferredItem<Item> BEE = ITEMS.register("bee",
                         () -> new DeferredSpawnEggItem(() -> EntityType.BEE, 0x15582019, 0x4400155,
                                         new Item.Properties()));
 
         public static final DeferredItem<Item> SCOOP = ITEMS.register("scoop",
-                        () -> new ScoopItem(new Item.Properties()));
+                        () -> new ScoopItem("scoop", new Item.Properties()));
 
-        public static final DeferredItem<Item> FLOREAL_FERTILIZER = ITEMS.registerSimpleItem("floreal_fertilizer",
-                        new Item.Properties());
+        public static final DeferredItem<Item> FLOREAL_FERTILIZER = ITEMS.register("floreal_fertilizer",
+                        () -> new Fertilizer(new Item.Properties()));
+
+        // public static final DeferredItem<Item> MINERAL_FERTILIZER =
+        // ITEMS.registerSimpleItem("mineral_fertilizer");
 
         public static final DeferredItem<Item> COPPER_NUGGET = ITEMS.registerSimpleItem("copper_nugget");
         public static final DeferredItem<Item> RAW_COPPER_NUGGET = ITEMS.registerSimpleItem("raw_copper_nugget");

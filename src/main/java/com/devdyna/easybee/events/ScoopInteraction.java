@@ -16,10 +16,10 @@ import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 public class ScoopInteraction {
 
 
-    ScoopInteraction(){}
+    public ScoopInteraction(){}
 
     @SubscribeEvent
-    public void scoopClickEvent(PlayerInteractEvent.EntityInteractSpecific event) {
+    public void playerClickEvent(PlayerInteractEvent.EntityInteractSpecific event) {
         if (event.getTarget().getType() == EntityType.BEE && event.getItemStack().is(BasicItem.SCOOP)) {
             ItemEntity itementity = new ItemEntity(event.getLevel(), event.getTarget().getX(), event.getTarget().getY(),
                     event.getTarget().getZ(),

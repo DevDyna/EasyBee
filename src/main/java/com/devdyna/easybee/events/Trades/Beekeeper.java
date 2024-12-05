@@ -15,7 +15,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 
 public class Beekeeper {
-        /**
+    /**
      * Allow to create a trade with any villager
      * 
      * @param VillagerTradeLevel level 1 to 5 inclusive
@@ -32,6 +32,9 @@ public class Beekeeper {
     public void addCustomTrades(VillagerTradesEvent event) {
         if (event.getType() == Profession.BEEKEEPER.get()) {
             CreateTrade(event.getTrades(), 1, Items.HONEYCOMB, 4, Items.EMERALD, 1, 12, 1, 1);
+            
+        
+        
         }
 
     }
