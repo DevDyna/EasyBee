@@ -30,11 +30,19 @@ public class Calc {
         return Math.random() < 0.99;
     }
 
+    public static boolean rnd90() {
+        return Math.random() < 0.90;
+    }
+
     public static boolean rnd05() {
         return Math.random() < 0.05;
     }
 
     public static boolean rnd10() {
         return Math.random() < 0.1;
+    }
+
+    public static boolean rndCustom(int percentuage) {
+        return Math.random() < (percentuage/100);
     }
 }
