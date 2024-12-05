@@ -11,7 +11,7 @@ import net.neoforged.neoforge.event.village.WandererTradesEvent;
 public class WanderingTrader {
 
     public void CreateTrade(WandererTradesEvent event, boolean isRare, Item ItemCost, int ItemCostCount, Item ItemSell,
-            int ItemSellCount, int maxUses, int xp, int priceMultiplier) {
+            int ItemSellCount, int maxUses, int xp, float priceMultiplier) {
         MerchantOffer trade = new MerchantOffer(new ItemCost(ItemCost, ItemCostCount),
                 new ItemStack(ItemSell, ItemSellCount), maxUses, xp, priceMultiplier);
         if (isRare) {
