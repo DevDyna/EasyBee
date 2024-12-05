@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ss",
+    " tw",
+    "t"
+  ],
+  "key": {
+    "t": {
+      "item": "minecraft:stick"
+    },
+    "s": {
+      "item": "minecraft:string"
+    },
+    "w": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "result": {
+    "id": "easybee:scoop",
+    "count": 1
+  }
+}

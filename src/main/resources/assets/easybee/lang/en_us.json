@@ -1,7 +1,36 @@
 {
-    "tab.easybee":"EasyBee",
-    "item.easybee.beewax":"Beewax",
-    "item.easybee.scoop":"Scoop",
-    "entity.minecraft.villager.easybee.beekeeper":"Beekeeper",
-    "item.easybee.bee":"Bee"
+  "_comment0": "Creative Tab Name",
+  "tab.easybee": "EasyBee",
+
+  "_comment1.0": "Display Name - Villager",
+  "entity.minecraft.villager.easybee.beekeeper": "Beekeeper",
+
+  "_comment1.1": "Display Name - Item",
+  "item.easybee.beewax": "Beewax",
+  "item.easybee.scoop": "Scoop",
+  "item.easybee.bee": "Bee",
+  "item.easybee.floreal_fertilizer": "§dFloreal Fertilizer§f",
+  "item.easybee.copper_nugget": "Copper Nugget",
+  "item.easybee.raw_copper_nugget": "Raw Copper Nugget",
+  "item.easybee.patina": "Patina",
+
+  "_comment2.0": "Tooltip - Default",
+  "tooltip.easybee.default.shift": "§8[§fLeft Shift§8]",
+  "tooltip.easybee.default.wip": "§8[§fLeft Shift§8]",
+
+  "_comment2.1": "Tooltip - Scoop",
+  "tooltip.easybee.scoop": "Allow to collect §6Bees §fas §aItem§f form",
+
+  "_comment2.2": "Tooltip - Beewax",
+  "tooltip.easybee.beewax": "Use it on a §6brewing stand§f with some §dnether wart§f to create some §chealing potion",
+
+  "_comment-1": "WIP",
+  "tooltip.easybee.bee.color.on": "§a",
+  "tooltip.easybee.bee.color.off": "§f",
+  "tooltip.easybee.bee.hp": "■",
+
+  "tooltip.easybee.floreal.desc": "Right click on §aDirt §fit can spawn some §6Flowers",
+  "tooltip.easybee.floreal.area": "§8[§fArea affected : §b3 blocks§8]",
+  "tooltip.easybee.floreal.axis": "§8[§fAxis supported : §aⓍ§f §cⓎ§f §aⓏ§8]"
+  
 }

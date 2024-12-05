@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "tag": "c:raw_materials/copper"
+      }
+    ],
+    "result": {
+      "id": "easybee:raw_copper_nugget",
+      "count": 9
+    }
+  }
