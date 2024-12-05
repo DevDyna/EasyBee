@@ -12,7 +12,6 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.PotionItem;
 import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -48,7 +47,7 @@ public class Beekeeper {
 
     private final TagKey<Item> FLOWERS = TagKey.create(
             Registries.ITEM,
-            ResourceLocation.fromNamespaceAndPath("minecraft", "small_flowers"));
+            ResourceLocation.fromNamespaceAndPath("minecraft", "flowers"));
 
     private final TagKey<Item> CANDLES = TagKey.create(
             Registries.ITEM,
@@ -61,83 +60,78 @@ public class Beekeeper {
 
             // ------------------------------//
             if (Calc.rnd50()) {
-                Buy(event, 1, BasicItem.BEEWAX.asItem(), 4, 1);
+                Buy(event, 1, BasicItem.BEEWAX.asItem(), Calc.rnd(1, 4), Calc.rnd(1, 4));
             } else {
-                Sell(event, 1, BasicItem.BEEWAX.asItem(), 16, 1);
+                Sell(event, 1, BasicItem.BEEWAX.asItem(), 4, Calc.rnd(1, 4));
             }
 
             if (Calc.rnd50()) {
-                Buy(event, 1, BasicItem.PATINA.asItem(), 8, 1);
+                Buy(event, 1, BasicItem.PATINA.asItem(), 4, Calc.rnd(1, 4));
             } else {
-                Sell(event, 1, BasicItem.PATINA.asItem(), 32, 1);
+                Sell(event, 1, BasicItem.PATINA.asItem(), 8, Calc.rnd(1, 4));
             }
             // ------------------------------//
 
             // ------------------------------//
             if (Calc.rnd50()) {
-                Buy(event, 2, Items.HONEYCOMB, 3, 1);
+                Buy(event, 2, Items.HONEYCOMB, Calc.rnd(1, 4), Calc.rnd(1, 4));
             } else {
-                Sell(event, 2, Items.HONEYCOMB, 9, 1);
+                Sell(event, 2, Items.HONEYCOMB, Calc.rnd(4, 8), Calc.rnd(1, 4));
             }
 
             if (Calc.rnd50()) {
-                Buy(event, 2, Items.HONEY_BOTTLE, 4, 1);
+                Buy(event, 2, Items.HONEY_BOTTLE, Calc.rnd(1, 4), Calc.rnd(1, 4));
             } else {
-                Sell(event, 2, Items.HONEY_BOTTLE, 16, 1);
+                Sell(event, 2, Items.HONEY_BOTTLE, Calc.rnd(3, 5), Calc.rnd(1, 4));
             }
             // ------------------------------//
 
             // ------------------------------//
-            if (Calc.rnd75()) {
-                for (Holder<Item> holder : BuiltInRegistries.ITEM.getTagOrEmpty(FLOWERS)) {
 
-                    if (Calc.rnd10()) {
-                        if (Calc.rnd50()) {
-                            Buy(event, 3, holder.value(), 4, 1);
-                        } else {
-                            Sell(event, 3, holder.value(), 8, 1);
-                        }
-                    }
+            for (Holder<Item> holder : BuiltInRegistries.ITEM.getTagOrEmpty(FLOWERS)) {
 
-                }
-            } else {
                 if (Calc.rnd50()) {
-                    Buy(event, 3, Items.FLOWER_POT, 2, 1);
-                } else {
-                    Sell(event, 3, Items.FLOWER_POT, 4, 1);
-                }
-            }
-            // ------------------------------//
-
-            // ------------------------------//
-            if (Calc.rnd50()) {
-                for (Holder<Item> holder : BuiltInRegistries.ITEM.getTagOrEmpty(CANDLES)) {
-
-                    if (Calc.rnd10()) {
-                        if (Calc.rnd50()) {
-                            Buy(event, 4, holder.value(), 4, 1);
-                        } else {
-                            Sell(event, 4, holder.value(), 8, 1);
-                        }
+                    if (Calc.rnd25()) {
+                        Buy(event, 3, holder.value(), Calc.rnd(1, 2), Calc.rnd(1, 4));
+                    } else {
+                        Sell(event, 3, holder.value(), Calc.rnd(4, 8), Calc.rnd(1, 4));
                     }
                 }
+
+            }
+
+            if (Calc.rnd50()) {
+                Buy(event, 3, Items.FLOWER_POT, Calc.rnd(1, 4), Calc.rnd(1, 4));
             } else {
+                Sell(event, 3, Items.FLOWER_POT, Calc.rnd(3, 5), Calc.rnd(1, 4));
+            }
+
+            // ------------------------------//
+
+            // ------------------------------//
+
+            Buy(event, 4, Items.FLINT_AND_STEEL, 1, Calc.rnd(1, 4));
+
+            for (Holder<Item> holder : BuiltInRegistries.ITEM.getTagOrEmpty(CANDLES)) {
+
                 if (Calc.rnd50()) {
-                    Buy(event, 4, Items.FLINT_AND_STEEL, 1, 4);
-                } else {
-                    Sell(event, 4, Items.FLINT_AND_STEEL, 1, 1);
+                    if (Calc.rnd25()) {
+                        Buy(event, 4, holder.value(), Calc.rnd(4, 12), Calc.rnd(1, 4));
+                    } else {
+                        Sell(event, 4, holder.value(), Calc.rnd(1, 16), Calc.rnd(1, 4));
+                    }
                 }
             }
-            
-            if (Calc.rnd50()) { //id from ItemPotionFix
-                Buy(event, 4, PotionItem.byId(1), 1, 4);
+
+            if (Calc.rnd50()) {
+                Buy(event, 4, Items.CLOCK, 1, Calc.rnd(1, 4));
             } else {
-                Buy(event, 4, PotionItem.byId(25), 1, 8);
+                Buy(event, 4, Items.MILK_BUCKET, 1, Calc.rnd(4, 7));
             }
             // ------------------------------//
 
             // ------------------------------//
-            Buy(event, 5, BasicItem.BEE.asItem(), 1, 20);
+            Buy(event, 5, BasicItem.BEE.asItem(), 1, Calc.rnd(4, 32));
             // ------------------------------//
 
         }
