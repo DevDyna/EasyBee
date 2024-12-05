@@ -1,0 +1,46 @@
+package com.devdyna.easybee.registries.item;
+
+import com.devdyna.easybee.EasyBee;
+
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+public class BasicItem {
+
+        BasicItem() {
+        }
+
+        public void register(IEventBus bus) {
+                ITEMS.register(bus);
+        }
+
+        public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EasyBee.MODID);
+
+        public static final DeferredItem<Item> BEEWAX = ITEMS.registerSimpleItem("beewax",
+                        new Item.Properties().food(new FoodProperties.Builder()
+                                        .alwaysEdible().nutrition(1).saturationModifier(2f)
+                                        .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 10), 50)
+                                        .build()));
+
+        public static final DeferredItem<Item> BEE = ITEMS.register("bee",
+                        () -> new DeferredSpawnEggItem(() -> EntityType.BEE, 0x15582019, 0x4400155,
+                                        new Item.Properties()));
+
+        public static final DeferredItem<Item> SCOOP = ITEMS.register("scoop",
+                        () -> new ScoopItem(new Item.Properties()));
+
+        public static final DeferredItem<Item> FLOREAL_FERTILIZER = ITEMS.registerSimpleItem("floreal_fertilizer",
+                        new Item.Properties());
+
+        public static final DeferredItem<Item> COPPER_NUGGET = ITEMS.registerSimpleItem("copper_nugget");
+        public static final DeferredItem<Item> RAW_COPPER_NUGGET = ITEMS.registerSimpleItem("raw_copper_nugget");
+        public static final DeferredItem<Item> PATINA = ITEMS.registerSimpleItem("patina");
+
+}
