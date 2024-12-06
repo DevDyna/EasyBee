@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: External Link
+    url: https://github.com/DevDyna/git-kit
+    about: Description
