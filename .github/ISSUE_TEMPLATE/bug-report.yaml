@@ -6,13 +6,13 @@ body:
   - type: checkboxes
     id: check-base
     attributes:
-      label: Check Base
-      description: base-desc
+      label: Base
+      description: Stuff that need to be checked!
       options:
         - label: I have checked all other issues on this project
           required: true
         - label: I'am using the latest version of this project released
-          required: false
+          required: true
 
   - type: checkboxes
     id: optional
@@ -25,17 +25,6 @@ body:
         - label: 2-option
           required: false
           
-  - type: dropdown
-    id: list-selection
-    attributes:
-      label: List Selection
-      description: list-desc
-      options:
-        - 0
-        - 1
-        - 2
-    validations:
-      required: true
         
   - type: input
     id: text-box
