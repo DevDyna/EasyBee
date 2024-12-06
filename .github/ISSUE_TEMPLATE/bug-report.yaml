@@ -3,14 +3,18 @@ description: You found a bug
 labels: [bug]
 assignees: DevDyna
 body:
- - type: checkboxes
-   id: check-base
-   attributes:
-      label: Prerequisites
+
+  - type: checkboxes
+    id: new-issue
+    attributes:
+      label: Core Section
       description: Things that need to be checked!
       options:
-        - label: I'm using the latest version of this mod
+        - label: I have searched on opened [issues](https://github.com/DevDyna/EasyBee/issues) and [discussions](https://github.com/DevDyna/EasyBee/discussions) of this repository
           required: true
+        - label: I'm using the latest version of this project
+          required: true
+
 
  - type: input
    id: text-box
