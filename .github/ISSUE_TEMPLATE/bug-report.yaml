@@ -12,7 +12,7 @@ body:
         - label: I'm using the latest version of this mod
           required: true
 
-    - type: input
+ - type: input
     id: text-box
     attributes:
       label: Mod Loader Version
@@ -21,7 +21,7 @@ body:
     validations:
       required: true
 
-  - type: textarea
+- type: textarea
     id: large-text-box-1
     attributes:
       label: Description
