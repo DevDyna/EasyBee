@@ -1,6 +1,6 @@
 name: Simple Text
 description: You found a bug
-labels: [bug]
+labels: [feature-request]
 assignees: DevDyna
 body:
   - type: textarea
