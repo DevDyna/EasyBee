@@ -4,6 +4,31 @@
 <div>&nbsp;<img src="https://github.com/DevDyna/ContentArchive/blob/main/Easy%20Bee/new.gif?raw=true" alt="" width="927" height="810" /></div>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
+<div>
+<div><span style="font-size: 24px;"><strong>All current features:</strong></span></div>
+<div><span style="font-size: 24px;">- Bee (Item-like)</span></div>
+<div><span style="font-size: 24px;">Inspired from <a href="https://legacy.curseforge.com/minecraft/mc-mods/easy-villagers">EasyVillager</a> (mod) , this item allow you to place anywhere a bee with all stats (nyi)</span></div>
+</div>
+<div>&nbsp;</div>
+<div><span style="font-size: 24px;">- Scoop (aka bee net)</span></div>
+<div><span style="font-size: 24px;">A tool that allow you to convert Bees (Entity) to Item form</span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 24px;">-&nbsp;Floreal Fertilizer (NYI)</span></div>
+<div><span style="font-size: 24px;">A special bonemeal that only generate all flowers&nbsp;</span></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>
+<div><span style="font-size: 24px;">and maybe more on future</span></div>
+</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
 <div>&nbsp;</div>
 <div>
 <div><span style="font-size: 24px;">This mod was originally a custom feature of&nbsp;<a href="https://legacy.curseforge.com/minecraft/modpacks/ironberry-expert">Ironberry Expert (Modpack)</a>&nbsp;</span></div>
@@ -13,13 +38,7 @@
 <div>&nbsp;</div>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
-<div>
-<div><span style="font-size: 18px;">List of all references:</span></div>
-<div><span style="font-size: 18px;">- Bee (Item form)</span></div>
-<div><span style="font-size: 18px;">- Scoop/Bee net</span></div>
-<div><span style="font-size: 18px;">- Floreal Fertilizer (NYI)</span></div>
-<div><span style="font-size: 18px;">and maybe more on future</span></div>
-</div>
+<div>&nbsp;</div>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
