@@ -7,7 +7,7 @@
 <div>
 <div><span style="font-size: 24px;"><strong>All current features:</strong></span></div>
 <div><span style="font-size: 24px;">- Bee (Item-like)</span></div>
-<div><span style="font-size: 24px;">Inspired from <a href="https://legacy.curseforge.com/minecraft/mc-mods/easy-villagers">EasyVillager</a> (mod) , this item allow you to place anywhere a bee with all stats (nyi)</span></div>
+<div><span style="font-size: 24px;">Inspired from <a href="https://legacy.curseforge.com/minecraft/mc-mods/easy-villagers">EasyVillager</a> (mod) , this item allow you to store and place on later anywhere a bee without need to lure with flowers!</span></div>
 </div>
 <div>&nbsp;</div>
 <div><span style="font-size: 24px;">- Scoop (aka bee net)</span></div>
@@ -51,4 +51,3 @@
 </div>
 <p>&nbsp;</p>
 </div>
-
