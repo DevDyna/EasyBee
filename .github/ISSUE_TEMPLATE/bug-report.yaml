@@ -13,6 +13,7 @@ body:
           required: true
         - label: I'm using the latest version of this project
           required: true
+          
  - type: input
    id: text-box
    attributes:
@@ -21,6 +22,7 @@ body:
       description: Write what version of modloader was used
     validations:
       required: true
+      
  - type: textarea
    id: large-text-box-1
    attributes:
@@ -29,6 +31,7 @@ body:
       placeholder: sqrt(-1) - sqrt(i) = -0,707106781 + 0,292893219 i
     validations:
       required: true
+      
   - type: textarea
     id: large-text-box-2
     attributes:
