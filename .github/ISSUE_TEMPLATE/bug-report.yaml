@@ -4,7 +4,7 @@ labels: [bug]
 assignees: DevDyna
 body:
  - type: checkboxes
-     id: check-base
+     id: checkbase
     attributes:
       label: Prerequisites
       description: Things that need to be checked!
