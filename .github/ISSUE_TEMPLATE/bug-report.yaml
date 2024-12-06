@@ -13,8 +13,20 @@ body:
           required: true
         - label: I'am using the latest version of this project released
           required: true
+
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Blup Blup , We are on deep !
+      options:
+        - Singleplayer/Local | NO LAN
+        - Multiplayer        | LAN
+        - Multiplayer        | Dedicated server
+    validations:
+      required: true
           
-        
   - type: input
     id: text-box
     attributes:
@@ -27,9 +39,17 @@ body:
   - type: textarea
     id: large-text-box
     attributes:
-      label: Large Text Box
-      description: desc-large-box
-      placeholder: example
+      label: Description
+      description: Describe what happen
+      placeholder: 
     validations:
       required: true
-      
+
+  - type: textarea
+    id: large-text-box-2
+    attributes:
+      label: How to reproduce
+      description: All steps to reproduce this issue
+      placeholder: 
+    validations:
+      required: false
