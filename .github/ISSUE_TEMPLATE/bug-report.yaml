@@ -22,7 +22,7 @@ body:
       required: true
 
   - type: textarea
-    id: large-text-box
+    id: large-text-box-1
     attributes:
       label: Description
       description: Describe what happen
