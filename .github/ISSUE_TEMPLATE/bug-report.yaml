@@ -9,9 +9,9 @@ body:
       label: Check Base
       description: base-desc
       options:
-        - label: 1-label required
+        - label: I have checked all other issues on this project
           required: true
-        - label: 2-label optional
+        - label: I'am using the latest version of this project released
           required: false
 
   - type: checkboxes
