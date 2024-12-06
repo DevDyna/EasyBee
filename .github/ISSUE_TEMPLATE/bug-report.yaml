@@ -13,25 +13,14 @@ body:
           required: true
         - label: I'am using the latest version of this project released
           required: true
-
-  - type: checkboxes
-    id: optional
-    attributes:
-      label: Optional
-      description: optional-desc
-      options:
-        - label: 1-option
-          required: false
-        - label: 2-option
-          required: false
           
         
   - type: input
     id: text-box
     attributes:
-      label: Text Box
-      placeholder: example
-      description: desc-box
+      label: Mod-loader Version
+      placeholder: forge-1.0
+      description: 
     validations:
       required: true
 
