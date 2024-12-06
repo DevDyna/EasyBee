@@ -6,8 +6,8 @@ body:
   - type: textarea
     id: large-text-box
     attributes:
-      label: Free Text Area
+      label: Free Text Area..
       description: 
-      placeholder: 
+      placeholder: ..where unicorns live safe on a world without problems!
     validations:
       required: true 
