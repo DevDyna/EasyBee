@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "ddd",
+      "dpd",
+      "ddd"
+    ],
+    "key": {
+      "d": {
+        "tag": "c:dyes"
+      },
+      "p": {
+        "item": "easybee:patina"
+      }
+    },
+    "result": {
+      "id": "easybee:floreal_fertilizer",
+      "count": 8
+    },
+    "show_notification": true
+  }

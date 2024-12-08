@@ -45,9 +45,9 @@ public class Beekeeper {
         CreateTrade(event, level, itemToSell, itemCount, Items.EMERALD, emeValue, 12, 10, 0.1);
     }
 
-    private final TagKey<Item> FLOWERS = TagKey.create(
-            Registries.ITEM,
-            ResourceLocation.fromNamespaceAndPath("minecraft", "flowers"));
+    // private final TagKey<Item> FLOWERS = TagKey.create(
+    //         Registries.ITEM,
+    //         ResourceLocation.fromNamespaceAndPath("minecraft", "flowers"));
 
     private final TagKey<Item> CANDLES = TagKey.create(
             Registries.ITEM,
@@ -88,16 +88,10 @@ public class Beekeeper {
 
             // ------------------------------//
 
-            for (Holder<Item> holder : BuiltInRegistries.ITEM.getTagOrEmpty(FLOWERS)) {
-
-                if (Calc.rnd50()) {
-                    if (Calc.rnd25()) {
-                        Buy(event, 3, holder.value(), Calc.rnd(1, 2), Calc.rnd(1, 4));
-                    } else {
-                        Sell(event, 3, holder.value(), Calc.rnd(4, 8), Calc.rnd(1, 4));
-                    }
-                }
-
+            if (Calc.rnd50()) {
+                Buy(event, 3, BasicItem.FLOREAL_FERTILIZER.asItem(), Calc.rnd(1, 4), Calc.rnd(1, 4));
+            } else {
+                Sell(event, 3, BasicItem.FLOREAL_FERTILIZER.asItem(), Calc.rnd(3, 5), Calc.rnd(1, 4));
             }
 
             if (Calc.rnd50()) {
