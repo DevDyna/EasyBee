@@ -1,7 +1,6 @@
 <p><img src="https://cf.way2muchnoise.eu/versions/1154134.svg" alt="title" /></p>
 <div><img src="https://img.shields.io/badge/NeoForge-lime?style=plastic&amp;link=https%3A%2F%2Fneoforged.net%2F" alt="Static Badge" /></div>
 <div><span style="font-size: 24px;">A completly new way to trasport bees with extra tweaks</span></div>
-<div>&nbsp;<img src="https://github.com/DevDyna/ContentArchive/blob/main/Easy%20Bee/new.gif?raw=true" alt="" width="927" height="810" /></div>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
 <div>
@@ -12,14 +11,25 @@
 <div>&nbsp;</div>
 <div><span style="font-size: 24px;">- Scoop (aka bee net)</span></div>
 <div><span style="font-size: 24px;">A tool that allow you to convert Bees (Entity) to Item form</span></div>
+<div>&nbsp;<img src="https://github.com/DevDyna/ContentArchive/blob/main/Easy%20Bee/new.gif?raw=true" alt="" width="927" height="810" /></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
 <div>&nbsp;</div>
 <div><span style="font-size: 24px;">-&nbsp;Floreal Fertilizer (NYI)</span></div>
-<div><span style="font-size: 24px;">A special bonemeal that only generate all flowers&nbsp;</span></div>
-<div>&nbsp;</div>
+<div><span style="font-size: 24px;">A special bonemeal that only generate all small flowers&nbsp;</span></div>
+<div>&nbsp;<img src="https://github.com/DevDyna/ContentArchive/blob/main/Easy%20Bee/floreal.gif?raw=true" alt="" /></div>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
 <div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
 <div><span style="font-size: 24px;">and maybe more on future</span></div>
 </div>
 <div>&nbsp;</div>
