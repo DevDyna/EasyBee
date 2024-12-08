@@ -8,6 +8,7 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -62,6 +63,7 @@ public class FlorealEvent {
 
         Level level = event.getLevel();
         BlockPos pos = event.getPos();
+        event.getEntity().swing(InteractionHand.MAIN_HAND);
 
         if (!event.getEntity().isCreative())
             event.getEntity().getMainHandItem().setCount(event.getEntity().getMainHandItem().getCount() - 1);

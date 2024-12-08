@@ -4,6 +4,7 @@ import com.devdyna.easybee.registries.item.BasicItem;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Entity.RemovalReason;
 import net.minecraft.world.entity.EntityType;
@@ -33,6 +34,7 @@ public class ScoopInteraction {
                     new ItemStack(BasicItem.BEE.asItem()));
             // pickup delay default
             itementity.setDefaultPickUpDelay();
+            event.getEntity().swing(InteractionHand.MAIN_HAND);
             // TODO
             //  net.minecraft.world.item.MobBucketItem;
             // bee_spawn_egg[entity_data={id:"minecraft:bee",UUID:[I;0,0,0,0],Health:0f,CustomName:'"
