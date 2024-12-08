@@ -2,8 +2,12 @@ package com.devdyna.easybee.Utils;
 
 public class Calc {
 
-    public Calc(){
+    public Calc() {
 
+    }
+
+    public static int rndSelector(int size) {
+        return rnd(0, size-1);
     }
 
     public static double rnd(double min, double max) {
@@ -11,7 +15,7 @@ public class Calc {
     }
 
     public static int rnd(int min, int max) {
-        return (int)Math.floor(Math.random() * (max - min + 1)) + min;
+        return (int) Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
     public static boolean rnd50() {
@@ -43,6 +47,7 @@ public class Calc {
     }
 
     public static boolean rndCustom(int percentuage) {
-        return Math.random() < (percentuage/100);
+        return Math.random() < (percentuage / 100);
     }
+
 }
